@@ -1,0 +1,13 @@
+{
+    colors: [#193243 , #FF7739 , #FFFFFF], 
+    
+    font : {
+        
+        font-family: Josefin Sans,
+        font-weight: 400, 700;
+    
+    },
+
+    pluggin/cdn used: *jQuery* , *google fonts*, *icons8.com*
+    
+}

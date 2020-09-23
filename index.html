@@ -1,0 +1,101 @@
+<!-- javascript from  -->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <!-- font-awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- icon -->
+    <link rel="icon" href="https://curiousjr.com/assets/curiousjr-logo.svg">
+    <title>Login | CuriousJr</title>
+    <!-- google fonts cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- loader -->
+    <div class='loader-wrapper'><span class='loader'><span class='loader-inner'></span></span></div> 
+    
+    <!-- content -->
+    <div class="form-wrapper">
+        <form class="signin-form">
+            
+            <img class="logo" src="https://curiousjr.com/assets/curiousjr-logo.svg" alt="">
+            <p class="small">CURIOUS TODAY, CONQUEROR TOMORROW</p>
+            
+            <h1 class="big-h">Please Log-In</h1>
+
+            <div class="input-group">
+              
+              <input onchange="email_val()" type="email" id="input_email" class="input" placeholder="Email address" required autofocus autocomplete= "off">
+              <label id="email_val" for="email_validation">Email must include "@" and "." sign.</label>  <!-- email validation -->
+              
+              <input onchange="pass_val()" type="password" id="input_password" class="input" placeholder="Password" required autocomplete= "off">
+              <label id="pass_val" for="password_validation">Length of password must be more than 5.</label> <!-- password validation -->
+
+            </div>
+            <div class="remember-me">
+              
+                <label>
+                  <input type="checkbox" value="remember-me"> Remember me.
+                </label>
+            
+            </div>
+            
+            <button onclick="login(event)" class="signin-btn" type="submit">Login</button>
+            
+            <div class="login-options">
+                
+                <div class="login-opt ">
+                  <a href=""><img class="login-opt-img" src="https://img.icons8.com/color/32/000000/google-logo.png"/></a>
+                </div>
+
+                <div class="login-opt left right">
+                  <a href=""><img class="login-opt-img" src="https://img.icons8.com/fluent/32/000000/facebook-new.png"/></a>
+                </div>
+
+                <div class="login-opt left right">
+                  <a href=""><img class="login-opt-img" src="https://img.icons8.com/fluent/32/000000/twitter.png"/></a>
+                </div>
+
+                <div class="login-opt right">
+                  <a href=""><img class="login-opt-img" src="https://img.icons8.com/fluent/32/000000/github.png"/></a>
+                </div>
+
+
+            </div>
+            
+            <p class="small" id="copyright"></p>
+
+        </form>
+    </div>
+
+
+
+
+</body>
+
+<script src="index.js"></script>
+
+
+<!-- ignore  -->
+  <footer >
+    <div class="container-fluid" style="background-color: #193243;color: #FF7739">
+        <p style = "padding:20px 0px ; margin:auto; font-size:16px">by - <u><a style="color:#FF7739" target="_blank" href="https://abhinav-barve.herokuapp.com">Abhinav Barve</a></u></p>    
+        <div class="contact">
+            <a style="color:#ff7739" class="footer-link" target="_blank" href="mailto:abhianv.barve2001@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a style="color:#ff7739" class="footer-link" target="_blank" href="https://www.linkedin.com/in/abhinav-barve-2001/"><i class="fab fa-linkedin "></i></a>
+            <a style="color:#ff7739" class="footer-link" target="_blank" href="https://github.com/abhinavbarve"><i class="fab fa-github "></i></a> 
+        </div>
+    </div>
+  </footer>
+<!-- ------- -->
+</html>
